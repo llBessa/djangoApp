@@ -1,4 +1,7 @@
 {% extends "polls/base.html" %}
+
+{% block title %} Polls | Home {% endblock %}
+
 {% block body %}
     {% if latest_question_list %}
         <ul class="flex justify-center gap-5">
