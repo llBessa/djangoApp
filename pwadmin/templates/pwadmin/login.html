@@ -1,0 +1,29 @@
+{% extends "pwadmin/base.html" %}
+
+{% block login %}
+    <li>
+        <a href="/login" class="inline-block border-b-2 border-b-white pb-0.5">Login</a>
+    </li>
+{% endblock %}
+
+{% block body %}
+    <main class="w-full h-5/6">
+        <div id="container" class="w-full h-full">
+            <form
+                class="flex flex-col gap-8 w-full h-full justify-center items-center"
+                action=""
+                method="post"
+                >
+                <div>
+                    <label for="" class="block w-80">Usuário</label>
+                    <input class="block w-80 rounded-md" type="text" name="user">
+                </div>
+                <div>
+                    <label for="" class="block w-80">Senha</label>
+                    <input class="block w-80 rounded-md" type="password" name="password">
+                </div>
+                <input class="inline-block w-80 px-7 py-3 bg-black text-white rounded-md" type="submit" value="Login">
+            </form>
+        </div>
+    </main>
+{% endblock %}
