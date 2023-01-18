@@ -11,9 +11,10 @@
         <div id="container" class="w-full h-full">
             <form
                 class="flex flex-col gap-8 w-full h-full justify-center items-center"
-                action=""
+                action="{% url 'pwadmin:handle_login' %}"
                 method="post"
                 >
+            {% csrf_token %}
                 <div>
                     <label for="" class="block w-80">Usuário</label>
                     <input class="block w-80 rounded-md" type="text" name="user">

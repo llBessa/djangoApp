@@ -1,4 +1,9 @@
 {% extends "pwadmin/base.html" %}
+{% load static %}
+
+{% block script %}
+    <script src="{% static 'pwadmin/js/index.js' %}"></script>
+{% endblock %}
 
 {% block home %}
     <li>
@@ -7,7 +12,7 @@
 {% endblock %}
 
 {% block body %}
-    <main class="w-full h-full mt-20">
+    <main class="w-full h-5/6 mt-20">
         <div class="text-6xl mx-80 font-normal">Gerencie suas senhas de maneira fácil e em qualquer lugar</div>
     </main>
 {% endblock %}
