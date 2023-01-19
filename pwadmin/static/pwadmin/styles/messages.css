@@ -1,0 +1,45 @@
+:root {
+    --success-color: rgb(32, 184, 53);
+    --error-color: rgba(197, 30, 30, 0.801);
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.message-success {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--success-color);
+    color: white;
+    font-weight: bold;
+    border-radius: 2%;
+    animation-name: fadeOut;
+    animation-duration: 3s;
+    position: fixed;
+    bottom: 2%;
+}
+
+.message-error {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--error-color);
+    color: white;
+    font-weight: bold;
+    border-radius: 2%;
+    animation-name: fadeOut;
+    animation-duration: 3s;
+    position: fixed;
+    bottom: 2%;
+}
+

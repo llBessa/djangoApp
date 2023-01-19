@@ -7,11 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="{% static 'pwadmin/pageIcon.png' %}">
+    <link href="{% static 'fontawesomefree/css/fontawesome.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'fontawesomefree/css/brands.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'fontawesomefree/css/solid.css' %}" rel="stylesheet" type="text/css">
     <title>
         {% block title %} Password Admin {% endblock %}
     </title>
     {% tailwind_css %}
     {% block script %}{% endblock %}
+    {% block styles %}{% endblock %}
 </head>
 <body class="w-screen h-screen">
     <nav class="bg-black px-10 py-4 text-white flex justify-between">
@@ -20,6 +24,11 @@
             {% block home %}
             <li>
                 <a href="/">Home</a>
+            </li>
+            {% endblock %}
+            {% block passwords %}
+            <li>
+                <a href="/passwords">Passwords</a>
             </li>
             {% endblock %}
             {% block login %}

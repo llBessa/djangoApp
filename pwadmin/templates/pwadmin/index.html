@@ -1,8 +1,13 @@
 {% extends "pwadmin/base.html" %}
 {% load static %}
 
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'pwadmin/styles/messages.css' %}">
+{% endblock %}
+
 {% block script %}
-    <script src="{% static 'pwadmin/js/index.js' %}"></script>
+    <script type="module" src="{% static 'pwadmin/js/functions.js' %}"></script>
+    <script type="module" src="{% static 'pwadmin/js/index.js' %}"></script>
 {% endblock %}
 
 {% block home %}
